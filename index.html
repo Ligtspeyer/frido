@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#e9e7db">
+  <meta name="description" content="The visual world of artist Orlando Frido Siebert and drag persona Dagma Doppel D.">
+  <title>Orlando Frido Siebert / Dagma Doppel D</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="artworks.js" defer></script>
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <a class="brand" href="#home" aria-label="Orlando Frido Siebert, home">O<span>/</span>F<span class="brand-dot">.</span></a>
+    <div class="header-caption">ART, DRAG &amp;<br>EVERYTHING IN BETWEEN</div>
+    <nav aria-label="Main navigation">
+      <a href="#work">WORK <span>↗</span></a>
+      <a href="#about">ABOUT <span>↗</span></a>
+    </nav>
+    <button class="persona-switch" type="button" aria-pressed="false" aria-label="Switch to Dagma Doppel D mode">
+      <span class="switch-label">MEET DAGMA</span><span class="switch-track"><span class="switch-knob"></span></span>
+    </button>
+  </header>
+
+  <main id="main" tabindex="-1">
+    <div id="home-view">
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero-topline"><span>ART / DRAG / BERLIN ENERGY</span><span>PORTFOLIO <span class="star">✳</span> SELECTED WORLDS</span></div>
+        <div class="hero-content">
+          <div class="hero-copy">
+            <p class="eyebrow"><span class="status-dot"></span> <span class="hero-identity">ORLANDO FRIDO SIEBERT / ARTIST</span></p>
+            <h1 id="hero-title">ART IS A<br><em>DRAG.</em></h1>
+            <div class="hero-bottom">
+              <p>Art, bodies, objects and alter egos.<br>A little beautiful. A little fucked up.</p>
+              <a class="circle-link" href="#work" aria-label="Explore the work">↘</a>
+            </div>
+          </div>
+          <div class="hero-image">
+            <img id="hero-image" alt="" fetchpriority="high">
+            <span class="hero-image-label">FIG. 01 / <span class="persona-name">ORLANDO FRIDO</span></span>
+            <span class="hero-sticker" aria-hidden="true">NO<br>RULES<br>✳</span>
+          </div>
+        </div>
+        <div class="hero-footer"><span>ORLANDO FRIDO SIEBERT</span><span>SCROLL TO EXPLORE ↓</span><span>EST. IN EXPERIMENTATION</span></div>
+      </section>
+
+      <div class="ticker" aria-hidden="true"><div>ART IS A DRAG ✳ BEAUTY IS A MESS ✳ MAKE A SCENE ✳ ART IS A DRAG ✳ BEAUTY IS A MESS ✳ MAKE A SCENE ✳</div></div>
+
+      <section class="work-section" id="work" aria-labelledby="work-title">
+        <div class="section-heading">
+          <div><p class="eyebrow">01 / STEP INSIDE</p><h2 id="work-title">THE <em>WORK.</em></h2></div>
+          <p>Twenty doors into an unruly archive.<br>Pick a tile. Get lost.</p>
+          <span class="section-index">[ 20 CHAPTERS / 95 IMAGES ]</span>
+        </div>
+        <div class="tile-wrap">
+          <div class="tile-grid" id="tile-grid"></div>
+          <div class="tile-overlay" aria-hidden="true"><span>ORLANDO</span><span>FRIDO</span><span>SIEBERT</span></div>
+          <div class="tile-hint">CLICK A TILE ↗</div>
+        </div>
+        <div class="archive-note"><span>AN ARCHIVE OF MANY SELVES</span><span>↓ KEEP SCROLLING</span></div>
+      </section>
+
+      <section class="about-section" id="about">
+        <div class="about-label"><span>02 / THE PERSON(S)</span><span>✳</span></div>
+        <div class="about-content">
+          <h2>ONE BODY.<br><em>MANY WORLDS.</em></h2>
+          <div class="about-columns">
+            <p>Orlando Frido Siebert is an artist making space for the strange, the expressive and the beautifully unfinished.</p>
+            <p>Dagma Doppel D is the drag persona: another way of being, becoming and taking up space. Same world, different light.</p>
+          </div>
+          <button class="about-switch" type="button">MEET DAGMA DOPPEL D <span>↗</span></button>
+        </div>
+      </section>
+    </div>
+
+    <section id="project-view" class="project-view" hidden aria-live="polite"></section>
+  </main>
+
+  <footer class="site-footer">
+    <div><span class="footer-mark">O/F<span>.</span></span><p>ART, DRAG &amp; EVERYTHING<br>IN BETWEEN.</p></div>
+    <div class="footer-right"><a href="#home">BACK TO THE TOP ↑</a><p>ORLANDO FRIDO SIEBERT<br>ALSO KNOWN AS DAGMA DOPPEL D</p></div>
+    <div class="footer-bottom"><span>MADE TO BE LOOKED AT.</span><span>BERLIN / EVERYWHERE</span></div>
+  </footer>
+
+  <dialog id="lightbox" class="lightbox" aria-label="Artwork viewer">
+    <button type="button" class="lightbox-close" aria-label="Close artwork">CLOSE ✕</button>
+    <img alt="">
+    <p></p>
+  </dialog>
+</body>
+</html>
